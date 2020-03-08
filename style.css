@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: black;
+    overflow-x: hidden;
+}
+
+
+#section {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    /* position: absolute; */
+    width: 6vw;
+    height: auto;
+}
+
+#icon-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    top: 0;
+    left: 10vw;
+    /* transform: translateY(-45%); */
+    height: 100%;
+}
+
+#icon-list div {
+    height: 20%;
+    stroke: red !important;
+    /* padding-bottom: 20%; */
+    display: block;
+}
+
+#icon-list img {
+    cursor: pointer;
+    padding-bottom: 4%;
+    padding-left: 5%;
+
+}
+
+#icon-list h6 {
+    font-size: 1vw;
+}
+
+.cl-grey {
+    color: #757576;
+}
+
+.cl-white {
+    color: white;
+}
+
+/* Animation  */
+#circle-text {
+    position: absolute;
+    /* width: 15vw; */
+    height: auto;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+#circle-text h1 {
+    font-size: 1.8vw;
+    padding-bottom: 1vw;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+#circle-text p {
+    font-size: 1.6vw;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
